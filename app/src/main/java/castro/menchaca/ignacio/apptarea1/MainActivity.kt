@@ -15,8 +15,8 @@ class MainActivity : AppCompatActivity() {
         btnLogin.setOnClickListener {
             if ((etUser.text.toString() == "ignacio") and (etPass.text.toString() == "hola123")){
                 toast("Bienvenido "+etUser.text.toString())
-                val activity2: Intent = Intent(this, Main2Activity::class.java)
-                startActivity(activity2)
+                val activity4: Intent = Intent(this, Main4Activity::class.java)
+                startActivity(activity4)
             }else{
                 if (etUser.text.toString()=="") {
                     etUser.error = "Usuario vacío"
